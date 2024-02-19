@@ -26,9 +26,9 @@ body{}
 
 .logo
 {
-    width: 7%;
+    width: 4.5%;
     padding: 0px;  
-    height: 48px;
+    height: 40px;
     /* background-color: yellow; */
     display: flex;
     /* align-items: center; */
@@ -45,8 +45,8 @@ body{}
 
 .socials
 {
-    width: 22%;
-    height: 50px;
+    width: 40%;
+    height: 40px;
     /* background-color: blue; */
 }
 
@@ -59,7 +59,8 @@ body{}
     list-style-type: none;
     align-items: center;
     justify-content: space-between;
-    font-size: 32px;
+    /* column-gap:20p ; */
+    font-size: 30px;
     color: #66a91f;
 }
 
@@ -78,12 +79,11 @@ body{}
 /* main content css  */
 .main
 {
-    height: 90vh;
+    /* height: 90vh; */
     width: 100%;
     background-color:/* #2e2e2e*/#ffffff;
     padding: 0px 12%;
-    display: flex;
-    
+    display: flex;    
     flex-direction: column;
 }
 
@@ -92,7 +92,7 @@ body{}
     width: 100%;
     padding: 30px 0px;
     /* background-color: green; */
-    margin-top: 70px;
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,13 +105,13 @@ body{}
     padding: 20px;
     /* background-color: red; */
     font-family: 'poppins';
-    font-size: 30px;
+    font-size: 17px;
     color: black;
 }
 
 .name
 {
-    font-size: 90px;
+    font-size: 50px;
     color: #e56f14;
 }
 
@@ -123,6 +123,7 @@ body{}
 .intro-text 
 {
     margin-top: 20px;
+    font-size: 18px;
 }
 
 .ttm-btn
@@ -167,15 +168,15 @@ body{}
 .bg 
 {
     width: 60%;
-    height: 450px;
+    height: 300px;
     background-color: #e56f14;
-    transform: rotateZ(-45deg);
+    transform: rotateZ(-50deg);
     border-radius: 10px;
    
 }
 .space{
     height:px;
-    margin-top: 120px;
+    margin-top: 70px;
 }
 
 /* navigation css  */
@@ -183,10 +184,9 @@ body{}
 .navigation
 {
     width: 100%;
-    padding: 30px 12%;
+    padding: 10px 12%;
     /* background-color: yellow; */
     position: absolute;
-
     margin-top: -80px;
 }
 
@@ -197,14 +197,14 @@ body{}
     display: flex;
     align-items: center;
     column-gap: 20px;
-    padding: 20px 20px;
+    padding: 15px 20px;
     border-radius: 10px;
 }
 
 .nav-item
 {
-    padding: 25px 0px;
-    width: 100px;
+    padding: 10px 0px;
+    width: 60px;
     background-color: white ;
     box-shadow: 0 0 10px black;
     font-size: 22px;
@@ -220,14 +220,14 @@ body{}
 
 .nav-item:hover
 {
-    width: 250px;
+    width: 200px;
 }
 
 .nav-link
 {
     width: 250px;
     /* background-color: red; */
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 .nav-link > i{
@@ -255,7 +255,7 @@ body{}
 {
     width: 100%;
     
-    padding: 30px 12%;
+    padding: 0px 12%;
     /* background-color: #393838; */
     font-family: 'poppins';
 }
@@ -319,7 +319,7 @@ body{}
 .skills 
 {
     display: flex;
-    font-size: 23px;
+    font-size: 17px;
     flex-direction: column;
     /* row-gap: 1px; */
 
@@ -331,10 +331,10 @@ body{}
     list-style-type: none;
 }
 .about >h1{
-    font-size: 35px;
+    font-size: 30px;
 }
 .about > p{
-    font-size: 23px;
+    font-size: 17px;
     
 }
 
@@ -342,7 +342,10 @@ body{}
 {
     list-style-type: none;
     margin-top: 10px;
-    font-size: 22px;
+    font-size: 18px;
+}
+.about-title2{
+    font-size: 18px;
 }
 
 
@@ -351,7 +354,7 @@ body{}
 .services 
 {
     width: 100%;
-    padding: 10px 0px;
+    padding: 0px 0px;
     /* background-color: yellow; */
     display: flex;
     column-gap: 4%;
@@ -363,11 +366,11 @@ body{}
 .service 
 {
     width: 22%;
-    padding: 20px;
+    padding: 0px 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    row-gap: 10px;
+    row-gap: 7px;
     border-radius: 10px;
     background-color:  #f5f5f5;
 }
@@ -502,20 +505,29 @@ body{}
     /* background-color: whitesmoke; */
     row-gap: 40px;
     display: none;
+    overflow: hidden;
     
 }
 .c1{
+   
     display: flex;
     column-gap: calc(20%/3);
     row-gap: 40px;
     flex-wrap: wrap;
-    padding: 0px 20px;
+    padding: 10px 20px;
+    overflow: hidden;
+    
+}
+.c1 img {
+    width: 60%;
+    margin-left: 30px;
+   
     
 }
 
 .social{
     width: 20%;
-    padding: 40px 0px;    
+    padding: 10px 0px;    
     align-items: center;    
     /* border: 1px solid black; */
     display: flex;
@@ -530,7 +542,12 @@ body{}
     background-size: cover;
 }
 .social:hover{
-    /* transform: scale(1.2); */
+    transform: scale(1.02);
+    transition: .4s;
+}
+
+.hide{
+    display: none;
 }
 
 .footer{
@@ -550,10 +567,9 @@ body{}
 .stm{
     width: 48%;
     padding: 0px 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color:#393838; */
+    
+    font-size: 24px;
+       /* background-color:#393838; */
     border-radius: 10px;
 }
 .sbr{
@@ -582,14 +598,14 @@ body{}
     margin-left: 10px;
     border-radius: 5px;
     /* background-color: brown; */
-    font-size: 23px;
+    font-size: 18px;
 
 }
 .subscribe{
      width: 30%;
      padding: 10px 0px;
      background-color: black;
-     font-size: 26px;
+     font-size: 20px;
     font-weight: bold;
      display: flex;
      align-items: center;
