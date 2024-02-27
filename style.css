@@ -899,7 +899,7 @@ body{}
         padding: 10px 0px;
         display: flex;
         flex-direction:column;
-        background-color: red;
+/*         background-color: red; */
         row-gap: 40px;
         display: none;
         overflow: hidden;
